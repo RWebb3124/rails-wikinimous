@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+ #navbar-wikinimous {
+  color: rgb(77, 77, 77);
+ }
+
+ p.content {
+	white-space: nowrap;
+	overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+li a {
+  text-decoration: none;
+  font-size: xx-large;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+#edit-article-button {
+  text-decoration: none;
+  padding: 13px 25px;
+  background-color: rgb(193, 210, 193);
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: darkslategrey;
+}
+
+#remove-article-button {
+  text-decoration: none;
+  padding: 13px 25px;
+  background-color: rgb(255, 122, 122);
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(27, 46, 46);
+}
+
+#show-content {
+  margin-bottom: 60px;
+}

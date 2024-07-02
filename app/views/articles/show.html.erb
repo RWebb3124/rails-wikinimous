@@ -1,0 +1,14 @@
+<div class="navbar p-3 bg-light">
+  <a href="/articles" class="text-decoration-none"><h4 class="fw-light text-dark fs-5">Wikinimous</h4></a>
+  <a href="/articles" class="btn btn-primary">return to home</a>
+</div>
+<div class="custom-container mt-5">
+  <h2><%= @article.title %></h2>
+  <p id="show-content"><%= @article.content %></p>
+  <%= link_to "Edit", edit_article_path, :id => "edit-article-button" %>
+  <%= link_to "Remove",
+    article_path(@article),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
+    :id => "remove-article-button"
+  %>
+</div>
